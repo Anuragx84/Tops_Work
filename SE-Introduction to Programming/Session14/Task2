@@ -1,0 +1,49 @@
+Question 2:
+Rewrite the following code to improve its indentation and add comments explaining each step, so that a beginner can understand what it does.
+
+Given Code:
+
+function isEven(num){if(num%2==0){return true;}else{return false;}}
+
+
+Answer:
+
+// This function checks whether the given number is even or not.
+function isEven(num) {
+
+    // Check if the number is completely divisible by 2.
+    // The % operator gives the remainder.
+    if (num % 2 == 0) {
+
+        // If the remainder is 0, the number is even.
+        return true;
+
+    } else {
+
+        // If the remainder is not 0, the number is odd.
+        return false;
+    }
+}
+
+
+Explanation:
+
+1. The function is named isEven and it takes one parameter called num.
+
+2. The expression num % 2 calculates the remainder when num is divided by 2.
+
+3. If the remainder is 0, the number is even, so the function returns true.
+
+4. If the remainder is not 0, the number is odd, so the function returns false.
+
+Examples:
+
+isEven(10) → true
+isEven(7) → false
+isEven(24) → true
+isEven(15) → false
+
+
+Conclusion:
+
+The function isEven checks whether a number is even or odd. It returns true for an even number and false for an odd number. Proper indentation and comments make the code easier for beginners to read and understand.
