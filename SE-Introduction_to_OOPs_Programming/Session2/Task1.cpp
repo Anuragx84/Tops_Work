@@ -26,7 +26,7 @@ class Playlist{
 		isPublic = !isPublic;
 	}
 	
-	//task3
+	//task4
 	void addSong(string songTittle){
 		songs[idx] = songTittle;
 		idx++;
