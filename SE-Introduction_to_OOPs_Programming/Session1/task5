@@ -1,0 +1,6 @@
+Three problems faced in the procedural C version were:  
+1. Data and functions were separate, making the code less organized.
+2. Managing multiple tasks using arrays and indexes was more difficult.
+3. Adding new features required more manual handling and separate functions.
+The OOP version solved these problems by using classes and methods. The Task class keeps task data and related operations together, 
+while the TaskList class manages multiple tasks through methods such as addTask(), markTaskDone(), and showTasks().
