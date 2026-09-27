@@ -1,0 +1,34 @@
+5.Explain in your own words the difference between encapsulation and abstraction, using examples from any social media app you use daily (like Instagram or WhatsApp).
+
+Encapsulation means protecting data by keeping it private and allowing access only through controlled methods.
+Example: In Instagram, your phone number is not directly accessible or editable by anyone. You can update it only through the app’s settings.
+class UserProfile {
+private:
+    string phoneNumber;
+
+public:
+    void setPhoneNumber(string number) {
+        phoneNumber = number;
+    }
+
+    string getPhoneNumber() {
+        return phoneNumber;
+    }
+};
+Here, phoneNumber is protected using private. This is encapsulation.
+Abstraction means showing only the important features and hiding the complex internal process.
+Example: In WhatsApp, you press the Send button to send a message. You do not need to know how the message is encrypted, sent through the internet, or delivered to the receiver.
+class Message {
+public:
+    virtual void send() = 0;
+};
+
+class WhatsAppMessage : public Message {
+public:
+    void send() override {
+        cout << "Message sent on WhatsApp";
+    }
+};
+Difference:
+- Encapsulation: Protects and controls data. Example: keeping an Instagram phone number private.
+- Abstraction: Hides complex working details. Example: WhatsApp hides how a message is delivered.
