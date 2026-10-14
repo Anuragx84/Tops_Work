@@ -1,0 +1,12 @@
+-- 1.Open MySQL Workbench or CLI and write a CREATE TABLE statement to create a table called 'restaurants' with columns: id (INT, primary key, auto-increment), name (VARCHAR(100)), location (VARCHAR(100)), and rating (DECIMAL(2,1)).
+create table restaurants(id INT primary key AUTO_INCREMENT, name VARCHAR(100), location VARCHAR(100), rating DECIMAL(2,1));
+
+-- 2.Use the ALTER TABLE command in MySQL to add a new column 'average_cost' (INT) to your 'restaurants' table.<br><br><em><strong>Hint:</strong> Remember to specify the data type when adding a new column.</em>
+ALTER TABLE restaurants
+ADD average_cost int;
+
+-- 3.Write a SQL statement to DROP the 'restaurants' table you created earlier. Double-check your command before running it to avoid accidental data loss.
+DROP table restaurants;
+
+-- 4.Create a new table called 'playlists' for a music app like Spotify, with columns: playlist_id (INT, primary key, auto-increment), title (VARCHAR(50)), created_by (VARCHAR(50)), and created_at (DATE).
+Create table playlists(playlist_id INT primary key AUTO_INCREMENT, title VARCHAR(50), created_by VARCHAR(50), created_at DATE);
